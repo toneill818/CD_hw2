@@ -29,7 +29,7 @@ private:
     // Increments the lookAhead to the next character
     void next(){
         lookAhead++;
-        ts.get();
+       ts.get();
     }
 
 public:
@@ -43,23 +43,6 @@ public:
     Expr* expr(){
         // Get e1 which cannot be a nullptr
         return LogicOr();
-//        Expr* e1 = Factor();
-//
-//        // Continue to loop until we are out of expressions
-//        while(true){
-//            if(ts.peek().getKind() == add_token){
-//                next();
-//                Expr* e2 = Factor();
-//                e1 = new Add(e1,e2);
-//            }else if(ts.peek().getKind() == subtract_token){
-//                next();
-//                Expr* e2 = Factor();
-//                e1 = new Subtract(e1,e2);
-//            }else{
-//                break;
-//            }
-//        }
-//        return e1;
     }
 
     Expr* LogicOr(){
@@ -115,15 +98,15 @@ public:
             }else if(ts.peek().getKind() == lessThanEqual_token){
                 next();
                 Expr*e2 = Additve();
-                e1 = new LessThan(e1,e2);
+                e1 = new LessThanEqual(e1,e2);
             }else if(ts.peek().getKind() == greaterThan_token){
                 next();
                 Expr*e2 = Additve();
-                e1 = new LessThan(e1,e2);
+                e1 = new GreaterThan(e1,e2);
             }else if (ts.peek().getKind() == greaterThanEqual_token){
                 next();
                 Expr*e2 = Additve();
-                e1 = new LessThan(e1,e2);
+                e1 = new GreaterThanEqual(e1,e2);
             }else{
                 break;
             }
