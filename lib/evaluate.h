@@ -82,7 +82,7 @@ struct Eval:Visitor{
         e->e1->accept(*this);
         bool arg1 = result;
         e->e2->accept(*this);
-        result = arg1 && result;
+        result = arg1 || result;
     }
 
     //void visit(Not const *e){
