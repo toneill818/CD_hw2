@@ -1,0 +1,2 @@
+/usr/bin/ar cr liblib.a  CMakeFiles/lib.dir/ast.cpp.o CMakeFiles/lib.dir/parser.cpp.o CMakeFiles/lib.dir/evaluate.cpp.o CMakeFiles/lib.dir/postfix.cpp.o CMakeFiles/lib.dir/sexpr.cpp.o
+/usr/bin/ranlib liblib.a

@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/calc2sexper.dir/sexpression.cpp.o  -o calc2sexper  lib/liblib.a 

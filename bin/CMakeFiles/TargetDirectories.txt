@@ -1,0 +1,4 @@
+/Users/Thomas/Documents/Compiler/hw1/bin/CMakeFiles/calc.dir
+/Users/Thomas/Documents/Compiler/hw1/bin/CMakeFiles/calc2postfix.dir
+/Users/Thomas/Documents/Compiler/hw1/bin/CMakeFiles/calc2sexpr.dir
+/Users/Thomas/Documents/Compiler/hw1/bin/lib/CMakeFiles/lib.dir

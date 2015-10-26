@@ -1,0 +1,26 @@
+Testing good input with no white space
+1
+(-(+12)(%(/(*34)5)6))
+12+34*5/6%-
+Testing input from HW sheet
+6
+(+(-95)2)
+95-2+
+1
+1
+1
+Testing input with whitespace
+6
+(+(-95)2)
+95-2+
+Testing order of operations with ()
+5
+(/(*(+12)5)(-63))
+12+5*63-/
+Tesing invalid input
+Error: expected a digit but got a
+Error: expected a digit but got a
+Error: expected a digit but got a
+Error extra ) found
+Error extra ) found
+Error extra ) found

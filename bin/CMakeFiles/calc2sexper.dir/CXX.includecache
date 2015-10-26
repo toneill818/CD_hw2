@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/ast.cpp
+iostream
+-
+
+../lib/parser.cpp
+string
+-
+cctype
+-
+stdlib.h
+-
+ast.cpp
+../lib/ast.cpp
+
+../lib/sexpr.cpp
+ast.cpp
+../lib/ast.cpp
+parser.cpp
+../lib/parser.cpp
+string
+-
+iostream
+-
+
+/Users/Thomas/Documents/Compiler/hw1/sexpression.cpp
+ast.cpp
+/Users/Thomas/Documents/Compiler/hw1/ast.cpp
+parser.cpp
+/Users/Thomas/Documents/Compiler/hw1/parser.cpp
+sexpr.cpp
+/Users/Thomas/Documents/Compiler/hw1/sexpr.cpp
+string
+-
+iostream
+-
+

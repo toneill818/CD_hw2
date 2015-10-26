@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/ast.cpp
+
+../lib/parser.cpp
+string
+-
+cctype
+-
+stdlib.h
+-
+algorithm
+-
+iostream
+-
+ast.cpp
+../lib/ast.cpp
+
+../lib/postfix.h
+ast.cpp
+../lib/ast.cpp
+parser.cpp
+../lib/parser.cpp
+iostream
+-
+
+/Users/Thomas/Documents/Compiler/hw1/evaluate_postfix.cpp
+ast.cpp
+/Users/Thomas/Documents/Compiler/hw1/ast.cpp
+parser.cpp
+/Users/Thomas/Documents/Compiler/hw1/parser.cpp
+postfix.h
+/Users/Thomas/Documents/Compiler/hw1/postfix.h
+iostream
+-
+
