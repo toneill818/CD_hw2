@@ -48,6 +48,10 @@ struct Eval:Visitor{
         int arg1 = value;
         e->e2->accept(*this);
         int arg2 = value;
+        if(arg2 == 0){
+            std::cout <<"Error divide by 0\n";
+            exit(-5);
+        }
         value = arg1 / arg2;
     }
 
@@ -74,7 +78,11 @@ struct Eval:Visitor{
     void visit(And const *e){
         e->e1->accept(*this);
         bool arg1 = result;
-        e->e2->accept(*this);
+        // Short circuit
+        if(!arg1)
+            result = arg1;
+        else
+            e->e2->accept(*this);
         result = arg1 && result;
     }
 
