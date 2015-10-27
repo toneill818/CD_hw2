@@ -170,6 +170,10 @@ public:
 
     // Term is simply a digit 0-9
     Expr* T(){
+        if(ts.peek().getKind() == error_token){
+            std::cout << "ERROR INVALID TOKEN\n";
+            exit(-9);
+        }
         // Check for boolean type
         if(ts.peek().getKind() == bool_token){
             if(ts.peek().getKind() == not_token){

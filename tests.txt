@@ -1,0 +1,5 @@
+Testing good input with no white space
+Testing input from HW sheet
+Testing input with whitespace
+Testing order of operations with ()
+Tesing invalid input

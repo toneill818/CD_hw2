@@ -18,6 +18,7 @@ bool Lexer::scan(Token_Stream &ts) {
         ts.put(t);
         return true;
     }
+    fail = true;
     return false;
 }
 
@@ -69,6 +70,8 @@ Token Lexer::scan() {
         case 't':
             return letter();
     }
+    addChar();
+    getCurrent();
     return Token();
 
 }

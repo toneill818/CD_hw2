@@ -40,7 +40,11 @@ int main(){
     std::getline(std::cin,equation,'\n');
 
     Lexer lex(st,equation);
-    lex.lex(ts);
+    auto error = lex.lex(ts);
+    if (!error){
+        std::cout << "Error lexing\n";
+        exit(9);
+    }
     Parser parser(ts);
     Expr* e ;
     e =parser.expr();
